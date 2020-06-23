@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 0px;
+        .container {
+            width: 100vw;
+        }
+        .logo {
+            padding-left: 15px;
+        }
+        .main_navigation { 
+            position: absolute;
+            width: 100%;
+        }
+        .navigation {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 auto;
+
+            li {
+                padding: 15px 20px;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+                background: #012237;
+                a {
+                    color: #ffffff;
+                }
+            }
+        }
+
+        .toggle_btn {
+            display: block;
+            border: 1px solid black;
+            width: 40px;
+            height: 30px;
+            padding: 10px 10px 0px 10px;
+            position: relative;
+            border-radius: 3px;
+            margin-right: 15px;
+
+            svg {
+                position: absolute;
+                top: 5px;
+                left: 8px;
+            }
+        }
+
+        /*
+        .main-navigation {
+            position: absolute;
+            width: 100%;
+            top: 75px;
+            left: 0px;
+            padding: 0px;
+            max-height: 70vh;
+            overflow-y: scroll;
+            background: #012237;
+            background-clip: padding-box;
+            color: #ffffff;
+           
+
+            .navigation-box {
+                flex-direction: column;
+                align-items: flex-start;
+
+                li {
+                    padding: 10px 20px;
+                    width: 100%;
+                    border-top: 1px solid rgba(255, 255, 255, 0.1);
+                    a {
+                        color: #ffffff;
+                        font-size: 15px;
+                        line-height: 26px;
+                        padding: 15px 30px 15px 0px;
+                        transition: all .4s ease;
+                    }
+                }
+
+                li.active {
+                    a {
+                        &:hover {
+                            color: #f16101;
+                        }
+                    }
+                }
+            }
+        }
+        .mob_nav_hide {
+            display: none;
+        }
+        */
+    }
+}

@@ -1,4 +1,4 @@
-* {
+*, ::after, ::before  {
     padding: 0px;
     margin:0px;
     box-sizing: border-box;
@@ -6,22 +6,202 @@
 
 body {
     width: 100vw;
-    height: 100vh;
-    background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
+    height: 2000px;
+    //background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);
     overflow: hidden;
-    padding: 0;
-    margin: 0;
+    font-size: 16px;
+    line-height: 34px;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.navbar {
+  width: 100vw;
+  padding: 25px 0px;
+  border-bottom: 1px solid #e1e1e1;
+  .container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 0px auto;
+  }
+  .main_navigation {
+    display: flex;
+    flex: 1 1 auto;
+    place-content: flex-end;
+  }
+  .navigation {
+    display: flex;
+    .active {
+      a {
+        color: #f16101;
+      }
+    }
+    li {
+      padding: 0px 20px;
+
+      &:last-child {
+        padding-right: 0px;
+      }
+
+      
+      a {
+        color: #81868a;
+        &:hover {
+          color: #f16101;
+        }
+      }
+    }
+  }
+  .toggle_btn, .mobile_navigation {
+    display: none;
+  }
+}
+
+/*
+
+.navbar {
+  width: 100vw;
+  padding: 15px;
+  .container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
   }
-  
+
+  .logo {
+    min-width: 180px;
+    a {
+      color: #000000;
+    }
+  }
+
+  .test {
+    background: red;
+    width: 100px;
+    height: 100px;
+  }
+
+  .main-navigation {
+    flex-grow: 1;
+    padding-left: 15px;
+    -webkit-animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
+    animation: fadeInDown .95s ease-in-out 0s 1 normal none running;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+  }
+
+  .navigation-box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    li {
+      padding: 20px;
+      &:first-child {
+        padding-left: 0px;
+      }
+    }
+  }
+
+  .mob_nav_show {
+    display: flex;
+  }
+}
+
+
+
+.mobile_nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 300px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  background: #fff;
+}
+
+.btn {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_nav {
+  position: absolute;
+  right: 0;
+  width: 300px;
+  top: 50px;
+  padding: 20px;
+
+  li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    .icon-placeholder {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      flex: 40px 0;
+      margin-right: 20px;
+    }
+    
+    .text-placeholder {
+      border-radius: 5px;
+      width: 200px;
+      height: 20px;
+      flex: 1;
+    }
+  }
+}
+
+/*
+
   nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 300px;
+  
   }
   
   .background {
@@ -100,3 +280,4 @@ body {
     cursor: pointer;
   }
   
+  */
