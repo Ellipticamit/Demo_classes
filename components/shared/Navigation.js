@@ -12,13 +12,14 @@ const variants = {
 };
   
 export const Navigation = ({ y }) => (
+    const [active, setActive] = useState(false);
     <motion.ul 
         className="navigation" 
         variants={variants}
         transition={{ type: "spring", stiffness: 40 }}
     >
         {itemIds.map(i => (
-             <MenuItem i={i} key={i} y={y} />
+             <MenuItem i={i} key={i} y={y} active={} />
         ))}
     </motion.ul>
 );

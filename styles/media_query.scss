@@ -1,6 +1,7 @@
 @media (max-width: 768px) {
     .navbar {
         padding: 15px 0px;
+       
         .container {
             width: 100vw;
         }
@@ -42,50 +43,5 @@
                 left: 8px;
             }
         }
-
-        /*
-        .main-navigation {
-            position: absolute;
-            width: 100%;
-            top: 75px;
-            left: 0px;
-            padding: 0px;
-            max-height: 70vh;
-            overflow-y: scroll;
-            background: #012237;
-            background-clip: padding-box;
-            color: #ffffff;
-           
-
-            .navigation-box {
-                flex-direction: column;
-                align-items: flex-start;
-
-                li {
-                    padding: 10px 20px;
-                    width: 100%;
-                    border-top: 1px solid rgba(255, 255, 255, 0.1);
-                    a {
-                        color: #ffffff;
-                        font-size: 15px;
-                        line-height: 26px;
-                        padding: 15px 30px 15px 0px;
-                        transition: all .4s ease;
-                    }
-                }
-
-                li.active {
-                    a {
-                        &:hover {
-                            color: #f16101;
-                        }
-                    }
-                }
-            }
-        }
-        .mob_nav_hide {
-            display: none;
-        }
-        */
     }
 }

@@ -2,7 +2,6 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import Link from 'next/link';
 
-
 export const MenuItem = ({ i, y }) => {
   const variants = {
     open: {
@@ -23,8 +22,7 @@ export const MenuItem = ({ i, y }) => {
   return (
     <motion.li
       variants={variants}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
+      whileHover={{ scale: 1.2 }}
       className="active"
     >
         <Link href="">
